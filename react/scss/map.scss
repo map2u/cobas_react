@@ -1,0 +1,43 @@
+
+.layer_legend_icon {
+    
+}
+
+.layer_legend_icon, .layercategory,.layername_label, .group_layername_label {
+    display: inline-block;
+    overflow:hidden; 
+    white-space:no-wrap; 
+    text-overflow:ellipsis;
+}
+
+ul.nav-dropdown-items li.nav-item a {
+    overflow:hidden; 
+    white-space:no-wrap; 
+    text-overflow:ellipsis;
+    word-wrap: no-wrap;
+}
+
+.breadcrumb-right-side {
+    position: absolute;
+    right: 10px;
+}
+input[type='text'][name='query_keyword'] {
+    border-radius: 8px;
+    margin-right: 15px;
+    border: 1px solid gainsboro;
+}
+button.search_button  {
+    border: none;
+    font-size: 1em;
+    padding: 0px;
+    margin-left: -35px;
+}
+button.map2u-showmap {
+    font-size: 1em;
+    padding: 0px;
+    margin-left: 25px;
+}
+
+div.basemap-name {
+    display: inline-block;
+}

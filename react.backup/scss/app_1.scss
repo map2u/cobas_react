@@ -1,0 +1,72 @@
+// setting the value of this variable to an empty data URL is the only working solution
+// to load the Bootswatch web fonts locally and avoid loading them from Google servers
+// see https://github.com/thomaspark/bootswatch/issues/55#issuecomment-298093182
+$web-font-path: 'data:text/css;base64,';
+// Embeds styles
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './react-metismenu-standart.css';
+@import './ol.css';
+
+
+body.hide-sidebar .metismenu {
+    width:46px;
+}
+#header-wrapper {
+    height:50px;
+}
+.navbar.navbar-fixed-top.navbar-top {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color:gainsboro;
+    border: 1px solid dash;
+}
+.navbar-header .navbar-brand {
+
+    border: 1px solid red;
+}
+.metismenu {
+    position: fixed;
+    width: 240px;
+    bottom: 0;
+    left: 0px;
+    top: 50px;
+    background-color:rgba(0, 60, 136, 0.4);
+}
+.metismenu ul li:hover {
+    color: green;
+}
+.metismenu ul li a {
+   /* padding: 0 5px;*/
+    color: black;
+}
+
+#rightsidebar-wrapper  {
+    top: 50px;
+    position: fixed;
+    height: 100%;
+    width: 280px;
+    right: 0px;
+    z-index: 1;
+    border: 1px solid green;
+}
+
+#feature-attributes-wrapper  {
+    top: 50px;
+    position: fixed;
+    height: 100%;
+    width: 280px;
+    left: 46px;
+    z-index: 1;
+    border: 1px solid green;
+}
+
+.show_ol3map_sidebar #rightsidebar-wrapper , .show_feature-attributes #rightsidebar-wrapper  {
+    top: 50px;
+    position: fixed;
+    height: 100%;
+    width: 0px;
+    right: 0px;
+    z-index: 1;
+    border: 0px solid green;
+}

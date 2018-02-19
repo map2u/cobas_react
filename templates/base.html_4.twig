@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- ... -->
+        <title>COBAS Virtual System!</title>
+        <link rel="stylesheet" href="{{ asset('build/css/font-awesome.css') }}">
+        <link rel="stylesheet" href="{{ asset('build/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('build/css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('build/css/left-sidebar.css') }}">
+        <link rel="stylesheet" href="{{ asset('build/css/ol3-sidebar.css') }}">
+        <style>
+            div#ol3map_map>div , .openlayers_map {
+                height: 100%;
+
+            }
+            body #right-sidebar-content {
+                width:240px;
+            }
+            body.show_ol3map_sidebar #right-sidebar-content {
+                width:0;
+            }
+            .navbar>.container, .navbar>.container-fluid {
+                width:100%;
+                max-width: 100%;
+                 padding-left: 0px; 
+            }
+            #header-wrapper nav.navbar-fixed-top {
+                padding-left: 0px; 
+            }
+        </style>
+    </head>
+    <body class="hide-sidebar" >
+        <div id="wrapper">
+        </div>
+
+        <script src="{{ asset('build/js/app.js') }}"></script>
+        <script src="{{ asset('build/js/bootstrap.js') }}"></script>
+
+
+    </body>
+</html>

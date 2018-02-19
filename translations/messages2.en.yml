@@ -1,0 +1,16 @@
+menu.search: __menu.search
+menu.logout: __menu.logout
+menu.choose_language: __menu.choose_language
+menu.admin: __menu.admin
+title.login: __title.login
+label.username: __label.username
+label.password: __label.password
+action.sign_in: __action.sign_in
+help.login_users: __help.login_users
+label.role: __label.role
+help.role_user: __help.role_user
+help.role_admin: __help.role_admin
+note: __note
+help.reload_fixtures: __help.reload_fixtures
+tip: __tip
+help.add_user: __help.add_user

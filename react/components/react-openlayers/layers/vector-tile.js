@@ -1,0 +1,72 @@
+import * as React from 'react';
+import * as ol from 'openlayers';
+import {Util} from "../util";
+import {Map} from '../map';
+import PropTypes from 'prop-types';
+
+export class VectorTile extends React.Component<any, any> {
+  constructor(props) {
+    super(props);
+        this.options= {
+         renderBuffer: undefined,
+         renderMode: undefined,
+         renderOrder: undefined,
+         extent: undefined,
+         minResolution: undefined,
+         maxResolution: undefined,
+         opacity: undefined,
+         preload: undefined,
+         source: undefined,
+         style: undefined,
+         updateWhileAnimating: undefined,
+         updateWhileInteracting: undefined,
+         visible: undefined
+       };
+       this.events=  {
+            'change': undefined,
+            'change:extent': undefined,
+            'change:maxResolution': undefined,
+            'change:minResolution': undefined,
+            'change:opacity': undefined,
+            'change:preload': undefined,
+            'change:source': undefined,
+            'change:useInterimTilesOnError': undefined,
+            'change:visible': undefined,
+            'change:zIndex': undefined,
+            'postcompose': undefined,
+            'precompose': undefined,
+            'propertychange': undefined,
+            'render': undefined
+          };
+  }
+  layer: ol.layer.Vector;
+
+  
+
+
+  
+
+  render() {
+    return null;
+  }
+
+  componentDidMount () {
+    let options = Util.getOptions(Object.assign(this.options, this.props));
+    this.layer = new ol.layer.VectorTile(options);
+    if (this.options.callback) {
+      this.options.callback(this.layer);
+    }
+    this.context.mapComp.layers.push(this.layer);
+    
+    let olEvents = Util.getEvents(this.events, this.props);
+    for(let eventName in olEvents) {
+      this.layer.on(eventName, olEvents[eventName]);
+    }
+  }
+
+}
+
+VectorTile['contextTypes'] = {
+  mapComp: PropTypes.instanceOf(Map),
+  map: PropTypes.instanceOf(ol.Map)
+};

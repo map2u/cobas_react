@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- ... -->
+        <link rel="stylesheet" href="{{ asset('build/css/app.css') }}">
+       <link rel="stylesheet" href="{{ asset('build/css/admin.css') }}">
+  
+    </head>
+    <body>
+        <div id="wrapper" class="hide-sidebar" style="background-color:rgba(0, 60, 136, 0.5);">
+            <nav class="navbar navbar-static-top navbar-top" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <div class="navbar-brand">
+                        <div class="navbar-logo col-xs-3">
+                            <img class="logo-image" alt="MAP2U INFORMATION" title="MAP2U INFORMATION" src="/images/map2u_logo2.svg">
+                        </div>
+                        <div class="navbar-logo col-xs-9">
+                            <img class="logo-text" alt="MAP2U INFORMATION" title="MAP2U INFORMATION" src="/assets/images/map2u-logo-text.png">
+                            <!--						<a class="logo-text" href="--><!--">--><!--</a>-->
+                        </div>
+                    </div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-default sidebar" role="navigation" style="background-color:transparent;">
+                    <div class="sidebar-nav navbar-collapse">
+                        <ul class="nav" id="side-menu">
+
+                            <li>
+                                <a class="dashboard admin" href="">
+                                    <i class="fa fa-dashboard fa-fw"></i>
+                                    <span class="content">Dashboard</span>
+                                </a>
+                            </li>
+                            <li data-id="344591f5-ae51-436e-8b08-ddb0183a6f3f" class="nav-first-level active"><a class="" href="#">
+                                    <i class="fa fa-home  fa-fw"></i>
+                                    <span class="content">House Related Info</span><span class="fa arrow"></span>
+                                </a>
+                                <ul class="nav nav-second-level collapse" data-id="344591f5-ae51-436e-8b08-ddb0183a6f3f">
+                                    <li data-id="31553597-1a28-422a-a296-44f6e4a1d22e"><a class="menus" data-action="house_for_sale" href="#">
+                                            <i class="fa fa-square-o fa-fw"></i>House For Sale
+                                        </a>
+                                    </li>
+                                    <li data-id="c880c2e6-f2d8-4cdc-9137-ca98ce09c58f"><a class="menus" data-action="house_for_rent" href="#">
+                                            <i class="fa fa-square-o fa-fw"></i>House For Rent
+                                        </a>
+                                    </li>
+                                    <li data-id="81fa1e5c-a955-4d15-b4aa-2731f24812a3"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>Real Estate Agents
+                                        </a>
+                                    </li>
+                                    <li data-id="5a425ab4-0318-466b-86a7-5dcb2014ac04"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>House Renovation
+                                        </a>
+                                    </li>
+                                    <li data-id="6f2d3171-c04e-44da-a4f0-8be207b89ba3"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>Building Material
+                                        </a>
+                                    </li>
+                                    <li data-id="c9eb2b2f-0037-4fde-89da-5cdae594340e"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>Landscape Design
+                                        </a>
+                                    </li>
+                                    <li data-id="ebdc4a0c-2233-42ae-b024-9b2a04febee7"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>House Decoration
+                                        </a>
+                                    </li>
+                                    <li data-id="5b5ea561-0686-4805-9ad5-3dd967a45bdc"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>Mortgage
+                                        </a>
+                                    </li>
+                                    <li data-id="fa7d550e-c7c8-4dc4-96a7-5642f48bfdd9"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>House Insurance
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li data-id="6dfce531-19a8-49ce-a8b8-d79fd44a768b" class="nav-first-level"><a class="" href="#">
+                                    <i class="fa fa-car  fa-fw"></i>
+                                    <span class="content">Vehicle Related Info</span><span class="fa arrow"></span>
+                                </a>
+                                <ul class="nav nav-second-level collapse" data-id="6dfce531-19a8-49ce-a8b8-d79fd44a768b">
+                                    <li data-id="f37a5bcd-f926-426a-80bf-5fdc84975dcf"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>Vehicle for Sale
+                                        </a>
+                                    </li>
+                                    <li data-id="2becb1de-6371-4cbf-ab68-9a5cae5799ed"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>Vehicle for Rent
+                                        </a>
+                                    </li>
+                                    <li data-id="68ab5055-659e-490d-b241-f92936b27b43"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>Vehicle for Moving
+                                        </a>
+                                    </li>
+                                    <li data-id="3d269398-cebb-422c-a990-47a42a589ebe"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>Vehicle for Car Pool
+                                        </a>
+                                    </li>
+                                    <li data-id="d13bfa9a-f05d-4ebb-a657-f27a0348c674"><a class="menus" data-action="vehiche_repaire" href="#">
+                                            <i class="fa fa-square-o fa-fw"></i>Vehiche Repaire
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li data-id="de11f094-390e-4ba6-897c-e9872ada012c" class="nav-first-level"><a class="" href="#">
+                                    <i class="fa fa-dot-circle-o  fa-fw"></i>
+                                    <span class="content">GPS Track Related Info</span><span class="fa arrow"></span>
+                                </a>
+                                <ul class="nav nav-second-level collapse" data-id="de11f094-390e-4ba6-897c-e9872ada012c">
+                                    <li data-id="7209dccd-6ae5-40d8-b768-d50d00faebe9"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>Track Pet
+                                        </a>
+                                    </li>
+                                    <li data-id="5630ebcb-3dc5-4774-886a-57888a6e4ea1"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>Track Kind/Elder
+                                        </a>
+                                    </li>
+                                    <li data-id="ad786a2a-4189-4517-b6ff-ca4b13938a2f"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>Track Vehicle
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li data-id="bd498b2b-b42f-49d7-bd20-0a6d5edb9e0b" class="nav-first-level"><a class="" href="#">
+                                    <i class="fa fa-plane  fa-fw"></i>
+                                    <span class="content">Travel Related Info</span><span class="fa arrow"></span>
+                                </a>
+                                <ul class="nav nav-second-level collapse" data-id="bd498b2b-b42f-49d7-bd20-0a6d5edb9e0b">
+                                    <li data-id="ef93d4b9-ca21-4114-ad93-a1c231560be9"><a class="menus" data-action="hiking" href="#">
+                                            <i class="fa fa-square-o fa-fw"></i>Hiking
+                                        </a>
+                                    </li>
+                                    <li data-id="5fcc6073-56b3-4f8a-a744-cf1d80f194ff"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>Travel Agents
+                                        </a>
+                                    </li>
+                                    <li data-id="f1f91c08-0de2-4b52-84ba-268848b5852f"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>Self-Driving Travelling
+                                        </a>
+                                    </li>
+                                    <li data-id="d6990ba3-104b-4a14-864d-250569f477d6"><a class="menus" style="color:red;">
+                                            <i class="fa fa-square-o fa-fw"></i>Travel Equipment
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li data-id="05b019d5-dc61-4a2e-aabf-9e35972d8093" class="nav-first-level"><a class="" href="#">
+                                    <i class="fa fa-book  fa-fw"></i>
+                                    <span class="content">Education Information</span><span class="fa arrow"></span>
+                                </a>
+                            </li>
+                            <li><a class="hidden-xs sidebar-toggle" data-toggle="collapse"><i class="fa fa-chevron-circle-left fa-fw"></i>
+                                    <span class="content">Collapse Menu</span>
+                                </a>
+                            </li>
+                        </ul>					
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    $(function () {
+
+
+                        $("div.sidebar-nav ul#side-menu.nav li a[data-action]").unbind("click");
+                        $("div.sidebar-nav ul#side-menu.nav li a[data-action]").click(function () {
+                            alert($(this).parents("ul[data-id]").data("id"));
+                            if (typeof $(this).parents("ul[data-id]").data("id") !== 'undefined' && $(this).parents("ul[data-id]").data("id") !== null && $(this).parents("ul[data-id]").data("id").length === 36) {
+                                app.updateRightSidebarAvert($(this).parents("ul[data-id]").data("id"));
+                            }
+                            alert($(this).data("action"));
+                        });
+
+
+                        $(document).on('updateMapInvalideSize', function () {
+                            ol3.map2u.map.updateSize();
+                            $('div#ol3map_map .ol-bottom-feature-list').css("left", ($('div#ol3map_map .ol-scale-line .ol-scale-line-inner').width() + 20) + "px");
+                            $('div#ol3map_map .ol-bottom-feature-list').width($('div#ol3map_map').width() - ($('div#ol3map_map .ol-scale-line .ol-scale-line-inner').width() + 20) - 40);
+
+                        });
+
+                    });
+                </script>
+
+                <ul class="nav navbar-top-links navbar-right">
+                    <li class="dropdown">
+                        <a class="front-end" title="" href="/" target="_blank" data-original-title="Storefront">
+                            <i class="fa fa-home"></i>
+                        </a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle messages" data-toggle="dropdown">
+                            <i class="fa fa-envelope"></i>
+                            <span class="label label-danger"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages">
+                            <li class="menu-header">You have  messages</li>
+                            <li class="menu-body"></li>
+                            <li class="menu-footer">
+                                <a class="text-center" href="/en/all">See all messages</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle alerts" data-toggle="dropdown">
+                            <i class="fa fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-activities">
+                            <li class="menu-header">Recent activities</li>
+                            <li class="menu-body"></li>
+                            <li class="menu-footer">
+                                <a class="text-center" href="/en/all">See all activities</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle settings" data-toggle="dropdown">
+                            <i class="fa fa-cog"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-settings">
+                            <li><a href="">Pages</a></li>
+                            <li><a href="">Banners</a></li>
+                            <li><a href="">Layouts</a></li>
+                            <!--							<li><a href="--><!--">--><!--</a></li>-->
+                            <li><a href="">Error Logs</a></li>
+                            <li><a href="">Settings</a></li>
+                            <li class="menu-footer"></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown user">
+                        <a class="dropdown-toggle dropdown-login" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i><div style="margin-left: 5px;display: inline-block;"></div></a>
+                        <div class="dropdown-menu  dropdown-user">
+
+
+                            <div class="container-fluid">
+                                <div class="row-fluid">
+                                    <div class="col-md-12">
+                                        <div class="">
+                                            <h4>User Log In</h4>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row-fluid">
+                                    <div class="col-md-12">
+                                        <div id="login-form" class="content-wrap center-block">
+                                            <form method="POST" accept-charset="utf-8" action="/en/login_check" role="form">
+                                                <fieldset>
+                                                    <div class="form-group message"> 
+                                                    </div> 
+
+                                                    <input name="_csrf_token" value="MbXTZEuwfTAHXYah8X86qBf41yhLfu8qbuPc7oWVqzk" type="hidden">
+                                                    <div class="form-group">
+
+                                                        <div class="input-group col-md-12">
+                                                            <input id="username" name="_username" class="form-control input-lg" placeholder="Email Address" autofocus="" type="text">
+                                                            <span class="input-group-addon"><i class="fa fa-at"></i></span>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="input-group col-md-12">
+                                                            <input id="password" name="_password" class="form-control input-lg" placeholder="Password" type="password">
+                                                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-5 wrap-none">
+                                                                <a class="btn btn-link btn-lg" href="/en/resetting/request"><span class="small"><small>Forgot password?</small></span></a>
+                                                            </div>
+                                                            <div class="col-md-7">
+                                                                <a class="btn btn-default btn-block btn-lg" href="/en/register/">Register</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div> 
+                    </li>                 <li><a href="/zh" title="" data-original-title="Chinese"><img src="/images/zh.png" style="height:16px;"></a></li>
+                </ul>
+
+                <h1 class="navbar-heading">
+
+                </h1>
+            </nav>
+            <div id="page-wrapper" style="padding: 0px; background-color: white; min-height: 720px; height: 100%;">
+
+
+                <div id="page-wrapper-ol3map_map" class="col-xs-12  col-sm-12 col-md-8">
+
+                    <div id="ol3map_map" style="margin-top: 15px; height: 662px; width: 100%; border-radius: 5px; border: 1px solid darkgreen;">
+                        <div class="ol-viewport" style="position: relative; overflow: hidden; width: 100%; height: 100%; touch-action: none;" data-view="4"><canvas style="width: 100%; height: 100%; display: block;" class="ol-unselectable" width="1774" height="1320"></canvas><div class="ol-overlaycontainer"></div><div class="ol-overlaycontainer-stopevent"><div class="ol-overlay-container" style="position: absolute; display: none;"><div id="ol3map_map_tooltip" class="tooltip" style="display: none;"></div></div><div class="ol-zoom ol-unselectable ol-control"><button class="ol-zoom-in" type="button" title="Zoom in">+</button><button class="ol-zoom-out" type="button" title="Zoom out">−</button></div><div class="ol-rotate ol-unselectable ol-control ol-hidden"><button class="ol-rotate-reset" type="button" title="Reset rotation"><span class="ol-compass" style="transform: rotate(0rad);">⇧</span></button></div><div class="ol-attribution ol-unselectable ol-control ol-collapsed"><ul><li style=""><a href="https://openlayers.org/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAHGAAABxgEXwfpGAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAhNQTFRF////AP//AICAgP//AFVVQECA////K1VVSbbbYL/fJ05idsTYJFtbbcjbJllmZszWWMTOIFhoHlNiZszTa9DdUcHNHlNlV8XRIVdiasrUHlZjIVZjaMnVH1RlIFRkH1RkH1ZlasvYasvXVsPQH1VkacnVa8vWIVZjIFRjVMPQa8rXIVVkXsXRsNveIFVkIFZlIVVj3eDeh6GmbMvXH1ZkIFRka8rWbMvXIFVkIFVjIFVkbMvWH1VjbMvWIFVlbcvWIFVla8vVIFVkbMvWbMvVH1VkbMvWIFVlbcvWIFVkbcvVbMvWjNPbIFVkU8LPwMzNIFVkbczWIFVkbsvWbMvXIFVkRnB8bcvW2+TkW8XRIFVkIlZlJVloJlpoKlxrLl9tMmJwOWd0Omh1RXF8TneCT3iDUHiDU8LPVMLPVcLPVcPQVsPPVsPQV8PQWMTQWsTQW8TQXMXSXsXRX4SNX8bSYMfTYcfTYsfTY8jUZcfSZsnUaIqTacrVasrVa8jTa8rWbI2VbMvWbcvWdJObdcvUdszUd8vVeJaee87Yfc3WgJyjhqGnitDYjaarldPZnrK2oNbborW5o9bbo9fbpLa6q9ndrL3ArtndscDDutzfu8fJwN7gwt7gxc/QyuHhy+HizeHi0NfX0+Pj19zb1+Tj2uXk29/e3uLg3+Lh3+bl4uXj4ufl4+fl5Ofl5ufl5ujm5+jmySDnBAAAAFp0Uk5TAAECAgMEBAYHCA0NDg4UGRogIiMmKSssLzU7PkJJT1JTVFliY2hrdHZ3foSFhYeJjY2QkpugqbG1tre5w8zQ09XY3uXn6+zx8vT09vf4+Pj5+fr6/P39/f3+gz7SsAAAAVVJREFUOMtjYKA7EBDnwCPLrObS1BRiLoJLnte6CQy8FLHLCzs2QUG4FjZ5GbcmBDDjxJBXDWxCBrb8aM4zbkIDzpLYnAcE9VXlJSWlZRU13koIeW57mGx5XjoMZEUqwxWYQaQbSzLSkYGfKFSe0QMsX5WbjgY0YS4MBplemI4BdGBW+DQ11eZiymfqQuXZIjqwyadPNoSZ4L+0FVM6e+oGI6g8a9iKNT3o8kVzNkzRg5lgl7p4wyRUL9Yt2jAxVh6mQCogae6GmflI8p0r13VFWTHBQ0rWPW7ahgWVcPm+9cuLoyy4kCJDzCm6d8PSFoh0zvQNC5OjDJhQopPPJqph1doJBUD5tnkbZiUEqaCnB3bTqLTFG1bPn71kw4b+GFdpLElKIzRxxgYgWNYc5SCENVHKeUaltHdXx0dZ8uBI1hJ2UUDgq82CM2MwKeibqAvSO7MCABq0wXEPiqWEAAAAAElFTkSuQmCC"></a></li><li>All maps © <a href="http://www.openstreetmap.org/">OpenStreetMap</a></li><li>© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</li></ul><button type="button" title="Attributions"><span>i</span></button></div><div class="ol-scale-line ol-unselectable"><div class="ol-scale-line-inner" style="width: 72px;">2 km</div></div><div class="rotate-north ol-unselectable ol-control"><button>N</button><button><i class="fa fa-dot-circle-o"></i></button><button>L</button></div><div class="ol-bottom-feature-list ol-unselectable ol-control hidden" style="left: 25px; width: 818px;"></div><div class="ol-full-screen ol-unselectable ol-control "><button class="ol-full-screen-false" type="button" title="Toggle full-screen">⤢</button></div><div class="ol-ctx-menu-container ol-unselectable" style="width: 170px;"><ul><li id="_jzog2gy05" class="some-style-class"><span>Center map here</span></li><li style="background-image:url(/images/contextmenu/marker.png)" id="_hx8zorvmw" class="some-style-class ol-ctx-menu-icon"><span>Add a Marker</span></li><li id="_h4hfr0ioq" class="ol-ctx-menu-separator"><hr></li><li id="_igf8hb0ks" class="ol-ctx-menu-zoom-in ol-ctx-menu-icon"><span>Zoom In</span></li><li id="_zi6qlw94y" class="ol-ctx-menu-zoom-out ol-ctx-menu-icon"><span>Zoom Out</span></li></ul></div><div class="ol-topmenu-bar ol-selectable ol-control"><button>N</button><button><i class="fa fa-dot-circle-o"></i></button><button><i class="fa fa-pencil-square-o"></i></button><button><i class="fa fa-print"></i></button><button><i class="fa fa-list"></i></button><button><i class="fa fa-expand"></i></button></div></div></div></div>
+
+                    <div id="mapstatus" class="row">
+                        <div class="pull-left">
+                            <div id="mapping_current_position" style="display:inline-block;margin-left: 10px;margin-top:3px;"></div>
+                        </div>
+                        <div class="pull-right">
+                            <div class="hidden"><img id="ol3-export_image" src="" crossorigin="Anonymous"></div>
+                            <div id="map2u_mapping-mouse-position" style="display:inline-block;margin-right: 10px;"><div class="map2u_mapping-mouse-position">outside</div></div>
+                            <select id="projection" style="display:inline-block;margin-top: 4px;margin-right: 5px;">
+                                <option value="EPSG:4326">EPSG:4326</option>
+                                <option value="EPSG:3857">EPSG:3857</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="page-wrapper-right-sidebar" class="col-xs-12 col-sm-12 col-md-4">
+                    <div id="page-right-sidebar" style="height: 693px;"><div id="ol3map-sidebar" class="ol3map-sidebar pull-left ol3map-sidebar-left hidden collapsed" style="height: 699px;">
+                            <!-- Nav tabs -->
+                            <div class="ol3map-sidebar-tabs">
+                                <ul role="tablist">
+                                    <li><a href="#layer_list" role="tab" title="" data-toggle="tooltip" data-container="body" data-placement="left" data-original-title="Layer List"><i class="fa fa-map-o"></i></a></li>
+                                    <li><a href="#feature_information" role="tab" title="" data-toggle="tooltip" data-container="body" data-placement="left" data-original-title="Feature information details"><i class="fa fa-info-circle"></i></a></li>
+                                    <li class="disabled"><a href="#messages" role="tab" data-toggle="tooltip" data-container="body" data-placement="left" data-original-title="" title=""><i class="fa fa-envelope"></i></a></li>
+                                    <li><a href="#mapping_spatialdataset" role="tab" data-toggle="tooltip" data-container="body" data-placement="left" data-original-title="" title=""><i class="fa fa-pencil-square-o"></i></a></li>
+                                    <li><a href="#mapping_createheatmap" role="tab" title="" data-container="body" data-toggle="tooltip" data-placement="left" data-original-title="Create Heat Map"><i class="fa fa-pencil-square-o"></i></a></li>
+                                    <li><a href="#mapping_userdraw" role="tab" title="" data-toggle="tooltip" data-container="body" data-placement="left" data-original-title="User Draw"><i class="fa fa-pencil"></i></a></li>
+                                    <li><a href="#mapping_featurestyle" role="tab" title="" data-container="body" data-toggle="tooltip" data-placement="left" data-original-title="Layer Feature Style"><i class="fa fa-tag"></i></a></li>
+
+                                    <li><a href="#mapping_spatialfile_upload" role="tab" data-container="body" title="" data-toggle="tooltip" data-placement="left" data-original-title="Upload Spatial Data to Sever"><i class="fa fa-cloud-upload"></i></a></li>
+                                </ul>
+
+                                <ul role="tablist">
+                                    <li><a href="#mapping_osm_legend" role="tab" data-container="body" title="" data-toggle="tooltip" data-placement="left" data-original-title="Open Street Map Legend"><i class="fa fa-info"></i></a></li>
+                                    <li><a href="#mapping_settings" role="tab" data-container="body" title="" data-toggle="tooltip" data-placement="left" data-original-title="System Settings"><i class="fa fa-gear"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Tab panes -->
+                            <div class="ol3map-sidebar-content">
+                                <div class="ol3map-sidebar-pane" id="layer_list">
+                                    <h1 class="ol3map-sidebar-header">
+                                        Layers
+                                        <div class="ol3map-sidebar-close"><i class="fa fa-caret-left"></i></div>
+                                    </h1>
+                                    <div class="ol3map-sidebar-panel-content">
+                                    </div>
+                                </div>
+                                <div class="ol3map-sidebar-pane" id="feature_information">
+                                    <h1 class="ol3map-sidebar-header">Feature Information<div class="ol3map-sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+                                    <div class="ol3map-sidebar-panel-content">
+                                    </div>
+                                </div>
+
+                                <div class="ol3map-sidebar-pane" id="messages">
+                                    <h1 class="ol3map-sidebar-header">Messages<div class="ol3map-sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+                                    <div class="ol3map-sidebar-panel-content">
+                                    </div>
+                                </div>
+                                <div class="ol3map-sidebar-pane" id="mapping_spatialdataset">
+                                    <h1 class="ol3map-sidebar-header">Set dataset spatial info<div class="ol3map-sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+                                    <div class="ol3map-sidebar-panel-content">
+                                    </div>
+                                </div>
+                                <div class="ol3map-sidebar-pane" id="mapping_createheatmap">
+                                    <h1 class="ol3map-sidebar-header">Create Heatmap<div class="ol3map-sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+                                    <div class="ol3map-sidebar-panel-content">
+                                    </div>
+                                </div>
+                                <div class="ol3map-sidebar-pane" id="mapping_userdraw">
+                                    <h1 class="ol3map-sidebar-header">User Draw Geometry Feature<div class="ol3map-sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+                                    <div class="ol3map-sidebar-panel-content">
+                                    </div>
+                                </div>
+                                <div class="ol3map-sidebar-pane" id="mapping_featurestyle">
+                                    <h1 class="ol3map-sidebar-header">Layer Feature Style<div class="ol3map-sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+                                    <div class="ol3map-sidebar-panel-content">
+                                    </div>
+                                </div>
+                                <div class="ol3map-sidebar-pane" id="mapping_spatialfile_upload">
+                                    <h1 class="ol3map-sidebar-header">Spatial File Upload<div class="ol3map-sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+                                    <div class="ol3map-sidebar-panel-content">
+                                    </div>
+                                </div>
+                                <div class="ol3map-sidebar-pane" id="mapping_osm_legend">
+                                    <h1 class="ol3map-sidebar-header">Legend<div class="ol3map-sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+                                    <div class="ol3map-sidebar-panel-content">
+
+                                    </div>
+                                </div>
+                                <div class="ol3map-sidebar-pane" id="mapping_settings">
+                                    <h1 class="ol3map-sidebar-header">Settings<div class="ol3map-sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+                                    <div class="ol3map-sidebar-panel-content">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                $(function () {
+                                    var sidebar = $('#ol3map-sidebar').sidebar({'position': 'left'});
+                                    $("#ol3map-sidebar .ol3map-sidebar-tabs li a").on("click", function () {
+                                        //  alert($(this).attr("href"));
+                                        var sidebar_href = $(this).attr("href");
+
+                                        if ($(sidebar_href + ".ol3map-sidebar-pane").find(".ol3map-sidebar-panel-content").html().toString().trim() === '') {
+
+
+                                            //  alert($(sidebar_href + ".ol3map-sidebar-pane").find(".ol3map-sidebar-panel-content").html());
+
+                                            $.ajax({
+                                                url: Routing.generate(sidebar_href.replace("#", ''), {_locale: app.locale}),
+                                                type: 'GET',
+                                                complete: function () {
+
+                                                },
+                                                success: function (data) {
+
+                                                    $(sidebar_href + ".ol3map-sidebar-pane").find(".ol3map-sidebar-panel-content").html(data);
+                                                },
+                                                cache: false,
+                                                contentType: false,
+                                                processData: false
+                                            });
+                                        }
+                                    });
+                                    $('.ol3map-sidebar-tabs [data-toggle="tooltip"]').tooltip({
+                                        animated: 'fade',
+                                        placement: 'left',
+                                        container: 'body'
+                                    });
+
+                                });
+                            </script>                                    </div>
+
+                        <div id="right-sidebar-content" style="padding:20px 10px 10px 40px;">
+                            <div class="row">
+                                <div id="right_sidebar_feature_list" class="col-xs-12 col-sm-12 col-md-6" style="height: 680px;">
+                                    <div class="feature_item">
+                                    </div>
+                                    <div class="feature_item">
+                                    </div>
+                                    <div class="feature_item">
+                                    </div>
+                                    <div class="feature_item">
+                                    </div>
+                                    <div class="feature_item">
+                                    </div>
+                                    <div class="feature_item">
+                                    </div>
+                                    <div class="feature_item">
+                                    </div>
+                                    <div class="feature_item">
+                                    </div>
+                                </div>
+                                <div id="right_sidebar_advertisment_list" class="col-xs-12 col-sm-12 col-md-6" style="height: 680px;"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div id="footer" class="">
+                <div class="row navbar-footer">
+                    <div class="col-sm-12 text-version">
+                        <p class="col-xs-9 wrap-none">Thank you for using <a target="_blank" href="https://www.map2u.com">MAP2U INFORMATION</a></p>
+                        <p class="col-xs-3 text-right wrap-none">Version 0.0.1</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="root" style="margin-top: 80px;"></div>
+        <script src="{{ asset('build/js/app.js') }}"></script>
+       <script src="{{ asset('build/js/sidebar.js') }}"></script>
+     <script src="{{ asset('metisMenu.min.js')}}" charset="utf-8" type="text/javascript" id="metis-menu-js" ></script>
+     
+    </body>
+</html>
