@@ -47,7 +47,7 @@ ReactDOM.render(
 
 Also you should embed core css file to your html for material design and transition effects to work.
 ```html
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/alpertuna/react-metismenu/master/dist/react-metismenu-standart.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/alpertuna/react-metismenu/dist/react-metismenu-standart.min.css" />
 ```
 You can find this css in your `node_modules/react-metismenu/dist` to embed locally.
 
